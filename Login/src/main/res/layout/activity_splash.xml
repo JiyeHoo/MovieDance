@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03557A"
+        tools:ignore="UselessParent">
+
+        <com.seagazer.animlogoview.AnimLogoView
+            android:id="@+id/anim_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoPlay="false"
+            app:gradientAnimDuration="1500"
+            app:gradientColor="#666"
+            app:logoName="Movie Dance"
+            app:offsetAnimDuration="2500"
+            app:showGradient="true"
+            app:textColor="#FFF"
+            app:textPadding="2dp"
+            app:textSize="60sp"
+            app:verticalOffset="50dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
