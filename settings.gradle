@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MovieDance"
 include ':app'
+include ':Login'
