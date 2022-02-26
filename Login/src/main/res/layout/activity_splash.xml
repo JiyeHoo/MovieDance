@@ -24,7 +24,7 @@
             app:showGradient="true"
             app:textColor="#FFF"
             app:textPadding="2dp"
-            app:textSize="60sp"
+            app:textSize="30sp"
             app:verticalOffset="50dp" />
 
     </FrameLayout>

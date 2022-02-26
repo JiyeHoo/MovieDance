@@ -6,6 +6,10 @@ import android.content.Intent;
 import com.jiyehoo.login.activity.LoginActivity;
 import com.jiyehoo.login.activity.SplashActivity;
 import com.jiyehoo.login.api.ILoginManager;
+import com.jiyehoo.login.presenter.LoginPresenter;
+import com.jiyehoo.res.IHttpCallback;
+
+import java.io.IOException;
 
 /**
  * TODO feature
@@ -14,6 +18,7 @@ import com.jiyehoo.login.api.ILoginManager;
  * @since 2022/1/14 11:39 下午
  */
 public class LoginManager implements ILoginManager {
+    private static final String TAG = "###LoginManager";
 
     private static LoginManager instance;
 
@@ -36,6 +41,11 @@ public class LoginManager implements ILoginManager {
     @Override
     public void startSplashActivity(Context context) {
         context.startActivity(new Intent(context, SplashActivity.class));
+    }
+
+    @Override
+    public void login(String user, String pwd, IHttpCallback callBack) {
+        LoginPresenter.getInstance().signIn(user, pwd, callBack);
     }
 
 

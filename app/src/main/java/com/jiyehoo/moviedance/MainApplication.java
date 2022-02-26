@@ -22,7 +22,7 @@ public class MainApplication extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String rootDir = MMKV.initialize(this);
-        Log.d(TAG, "mmkv root: " + rootDir);
+//        String rootDir = MMKV.initialize(this);
+//        Log.d(TAG, "mmkv root: " + rootDir);
     }
 }
